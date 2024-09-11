@@ -30,7 +30,7 @@ export function FlashCard() {
 
   const handleFlip = () => {
     setFlip(!flip);
-    if (flip) {
+    if (!flip) {
       setFliptext("Hide");
     } else {
       setFliptext("Reveal");
@@ -73,7 +73,7 @@ export function FlashCard() {
           onClick={handleFlip}
           className="bg-custom-mid opacity-85 text-white text-md w-24"
         >
-          Reveal
+          {fliptext}
         </Button>
         <Button
           variant="outline"
