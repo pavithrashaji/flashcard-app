@@ -43,6 +43,8 @@ export function FlashCard() {
     } else {
       nextIndex(0);
     }
+    setFlip(false);
+    setFliptext("Reveal");
   };
 
   useEffect(() => {
@@ -54,7 +56,7 @@ export function FlashCard() {
   }
 
   return (
-    <Card className="w-[500px] text-center p-4 px-10">
+    <Card className="w-[500px] text-center p-10">
       <CardHeader>
         <CardTitle>GENERAL CS</CardTitle>
         <CardDescription>Flashcard Review</CardDescription>
