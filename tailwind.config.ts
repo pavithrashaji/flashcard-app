@@ -17,6 +17,7 @@ const config: Config = {
   		colors: { 
         'custom-mid': '#3F1B43',  
         'custom-end': '#330040', 
+		'custom-card': '#D9BED9',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
